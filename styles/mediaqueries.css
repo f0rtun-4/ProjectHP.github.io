@@ -1,0 +1,49 @@
+@media only screen and (max-width: 670px) {
+    .letter, .letter2, .letter3 {
+        font-size: 1cm;
+    }
+
+    #main {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+
+    .box {
+        width: 60px;
+    }
+
+    #main2 {
+        position: absolute;
+        top: 150%;
+        left: 4%;
+    }
+
+    .box2 {
+        width: 42px;
+    }
+
+    #main3 {
+        position: absolute;
+        top: 250%;
+        left: 25%;
+    }
+
+    .box3 {
+        width: 50px;
+    }
+
+    .countdown {
+        margin-bottom: 40%;
+    }
+
+
+    .day, .hour, .minute, .second {
+        padding: 5px;
+        margin: 25px;
+        font-size: 2rem;
+    }
+
+
+
+}

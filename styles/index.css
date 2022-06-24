@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oleo+Script+Swash+Caps&family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@100;400&display=swap');
+
+@font-face {
+    font-family: Pixel;
+    src: url(../Font/PublicPixel-0W5Kv.ttf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+/* LETTER-SECTIOn */
+
+.scroll-icon {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.scroll {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+}
+
+.scroll::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+}
+
+
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+.animationScroll {
+    height: 400vh;
+}
+
+
+
+
+.letter,
+.letter2,
+.letter3 {
+    font-family: 'Pixel';
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.box {
+    width: 130px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.letter {
+    font-size: 4cm;
+    line-height: 250px;
+    position: relative;
+    left: -250px;
+    transition: all .25s linear;
+}
+
+#main2 {
+    position: absolute;
+    top: 150%;
+    left: 0;
+}
+
+.box2 {
+    width: 130px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.letter2 {
+    font-size: 4cm;
+    line-height: 250px;
+    left: -290px;
+    position: relative;
+    transition: all .25s linear;
+}
+
+#main3 {
+    position: absolute;
+    top: 250%;
+    left: 27%;
+}
+
+.box3 {
+    width: 150px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+
+
+}
+
+.letter3 {
+    font-size: 5cm;
+    line-height: 250px;
+    position: relative;
+    transition: all .25s linear;
+}
+
+/* letter 3 */
+
+.left {
+    left: -250px;
+}
+
+.top {
+    top: -250px;
+}
+
+.bottom {
+    bottom: -250px;
+}
+
+.right {
+    right: -250px;
+}
+
+.h1-text {
+    background-image: url(../Bahan\ web/cloud-dark.svg);
+    background-color: #ffffff;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.h1-text {
+    color: rgb(0, 0, 0);
+
+}
+
+/* CARD-SECTION */
+
+.container {
+    background-image: url(../Bahan\ web/cloud-dark.svg);
+    width: 100%;
+    height: 115vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.col {
+    flex-basis: 50%;
+    background-color: #ffffff;
+}
+
+.text-content {
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.text-content h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.card2 {
+    float: right;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #a18a96;
+    background: url(../Bahan\ web/Ranpo.jfif) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 0px;
+    transform: translateY(100px);
+    transition: transform .125s;
+}
+
+.card__content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 20px;
+    box-shadow: inset 48px 48px #fff;
+}
+
+.card__title {
+    color: #000000;
+    text-align: center;
+    line-height: 20px;
+}
+
+.card_subtitle {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card__description {
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.card:hover .card__content {
+    transform: translateY(0);
+}
+
+.card:hover .card__description {
+    font-size: 14px;
+    opacity: 1;
+    transition-delay: .20s;
+}
+
+
+.button {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: #000000;
+    border-radius: 4px;
+    font-size: 25px;
+    background-color: #ffffff;
+    width: 200px;
+    padding: 5px;
+}
+
+/* MOON-SECTION */
+
+.container-2 {
+    background-color: #000000;
+    width: 100%;
+    height: 50vh;
+    display: none;
+}
+
+.wrap-content {
+    height: 60vh;
+    background-color: #121212;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-text {
+    color: #ffffff;
+}
+
+.container-image {
+    background-image: url(../Bahan\ web/MoonT.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* COUNTDOWN */
+
+.countdown {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40%;
+    color: #ffffff;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    padding: 10px;
+    margin: 10px;
+    font-size: 3rem;
+}
+
+
+.text-day {
+    text-align: center;
+}
+
+
+.footer {
+
+    /*height: 50vh;
+    background-image: url(../Bahan\ web/cloud-dark.svg);*/
+    background-color: #18c7e7;
+    background-position: bottom;
+}
